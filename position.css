@@ -1,0 +1,80 @@
+*{box-sizing: border-box;
+}
+
+/*position: absolute, relative, fixed, sticky
+
+top 
+bottom
+left
+right
+
+*/
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100 px;
+    height: 100px;
+    padding:0;
+}
+
+parent{
+    position:fixed;
+    top: 25px;
+    bottom: 25px;
+    width:600px;
+}
+
+.child{
+    position:absolute;
+    width:200px;
+    height: 200px;
+    font-family: sans-serif;
+    font-size: 32px;
+    text-align: center;
+    line-height: 200px;
+}
+
+.child1{
+    bottom:0;
+    right:0;
+    background-color: darkgreen;
+    z-index: 4;
+    transform: rotate(45deg);
+}
+
+.child2{
+    bottom: 100px;
+    right: 100px;
+    background-color: purple;
+    z-index: 3;
+    transform: rotate(25deg)
+}
+
+.child3{
+    bottom: 200px;
+    right:200px;
+    background-color: blue;
+    z-index: 2;
+    transform: rotate(30deg);
+}
+
+.child4{ background-color: brown;
+    top: 100px;
+    left: 100px;
+    z-index: 1;
+    transform: rotate(65deg);
+
+}
+
+.child5{
+    background-color: chartreuse;
+    transform: rotate(70deg);
+}
